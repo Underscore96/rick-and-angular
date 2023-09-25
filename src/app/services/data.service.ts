@@ -8,6 +8,7 @@ import { CharacterDetail } from '../model/character-detail';
 })
 export class DataService {
 
+
  readonly BASE_URL = 'https://rickandmortyapi.com/api/';
 
  pageNumber = 1;
@@ -38,5 +39,10 @@ export class DataService {
       this.getAllCharacters();
 
     }
+  }
+
+  getSingleCharacter(id: string): Observable<CharacterDetail> {
+    return this.http.get<CharacterDetail>(this.BASE_URL + 'character/' + id)
+
   }
 }
