@@ -5,12 +5,13 @@
     </button>
   </a>
 
-  <span>My App</span>
+  <span>Rick and Morty</span>
   <span class="spacer"></span>
-  <button mat-icon-button>
-    <mat-icon>favorite</mat-icon>
+  <button (click)="previousPage()" mat-icon-button>
+    <mat-icon>arrow_back_ios</mat-icon>
   </button>
-  <button mat-icon-button>
-    <mat-icon>share</mat-icon>
+  <span>{{dataServ.pageNumber}}</span>
+  <button (click)="nextPage()" mat-icon-button>
+    <mat-icon>arrow_forward_ios</mat-icon>
   </button>
 </mat-toolbar>

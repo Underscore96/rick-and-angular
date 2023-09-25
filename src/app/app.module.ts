@@ -10,6 +10,8 @@ import { CardComponent } from './components/card/card.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule,
+    MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
